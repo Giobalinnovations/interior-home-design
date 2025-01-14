@@ -21,6 +21,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        {/* Google Tag Manager */}
         <GoogleTagManager gtmId="GTM-KRH5B6BN" />
       </body>
     </html>
