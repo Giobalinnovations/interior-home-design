@@ -18,6 +18,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Menu, Phone } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navigationItems: {
   title: string;
@@ -76,7 +77,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="font-bold text-xl">
-          Home<span className="text-primary">Interior</span>Design
+          <Image
+            src="/images/logo.png"
+            alt="Logo"
+            width={170}
+            height={170}
+            // className="w-10 h-10"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -149,7 +156,13 @@ export default function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px]">
             <SheetTitle>
-              Interior<span className="text-primary">Home</span>Design
+              <Image
+                src="/images/logo.png"
+                alt="Logo"
+                width={150}
+                height={150}
+                // className="w-10 h-10"
+              />
             </SheetTitle>
             <nav className="flex flex-col space-y-4">
               {navigationItems.map(item => (
