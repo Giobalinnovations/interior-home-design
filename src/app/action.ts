@@ -12,9 +12,9 @@ const formSchema = z.object({
   }),
   message: z
     .string()
-    .min(10, {
-      message: 'Message must be at least 10 characters.',
-    })
+    // .min(10, {
+    //   message: 'Message must be at least 10 characters.',
+    // })
     .optional()
     .or(z.literal('')),
 });
