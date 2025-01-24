@@ -194,10 +194,14 @@ export default function Header() {
                   )}
                 </div>
               ))}
-              <Button className="w-full mt-4">
-                <Phone className="mr-2 h-4 w-4" />
-                Contact Us
-              </Button>
+              <SheetTrigger asChild>
+                <Button className="w-full mt-4" asChild>
+                  <Link href="#hero">
+                    <Phone className="mr-2 h-4 w-4" />
+                    Contact Us
+                  </Link>
+                </Button>
+              </SheetTrigger>
             </nav>
           </SheetContent>
         </Sheet>
