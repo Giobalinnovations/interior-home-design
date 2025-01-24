@@ -154,7 +154,7 @@ export function ContactForm() {
         </div>
         <Button
           type="submit"
-          className="w-full"
+          className="Get Free Consultation w-full"
           disabled={status === 'executing'}
         >
           {status === 'executing' ? (
